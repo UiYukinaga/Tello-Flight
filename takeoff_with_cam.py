@@ -37,7 +37,6 @@ def main():
         drone.takeoff()
         #sleep(10)
         container = av.open(drone.get_video_stream())
-
         start_time = time.time()
         videoCamera(start_time,container,drone,15)
         
